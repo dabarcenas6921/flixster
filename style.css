@@ -1,1 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#load-more-movies-btn{
+    display: block;
+}
+
+/* Header CSS */
+
+.nav-bar{
+    color: white;
+    background-color: #E50914;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-bar h1{
+    color: white;
+    font-size:40px;
+    text-align:left;
+    margin-top:0px;
+    float:left;
+    margin:0px;
+    line-height:50px;
+    margin-left:50px;
+    padding-top: 12px;
+}
+
+.search-form{
+float: right;
+margin-top: 12px;
+margin-right: 25px;
+}
+
+/* Smaller nav-bar */
+
+.smaller-navbar{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.smaller-navbar h2{
+    float: left;
+    margin-left: 15px;
+}
+
+.smaller-navbar button{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+/* Movie container CSS */
+
+.movies-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.movie-card{
+    margin: 10px;
+    zoom: 20%;
+}
+
+.movie-card:hover{
+    transform: scale(1.05);
+}
+
+.movie-title{
+    zoom: 380%;
+    max-width: 300px;
+}
+
+.movie-votes{
+    zoom:450%;
+}
+
+#search-input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    outline: 0;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+}
+
+#search-input:hover, #search-input:focus {
+    border: 1.5px solid black;
+    background-color: #EDEFF2;
+  }
+
+/* CSS for buttons */
+button{
+  appearance: none;
+  background-color: #f5f5f5;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 16px;
+  margin-left: 8px;
+  margin-top: 2px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+
+button:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+/* CSS for the movie modals */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
