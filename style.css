@@ -28,6 +28,7 @@ html, body {
     line-height:50px;
     margin-left:50px;
     padding-top: 12px;
+    cursor:pointer;
 }
 
 .search-form{
@@ -68,6 +69,7 @@ margin-right: 25px;
 .movie-card{
     margin: 10px;
     zoom: 20%;
+    cursor: pointer;
 }
 
 .movie-card:hover{
