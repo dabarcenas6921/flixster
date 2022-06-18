@@ -170,7 +170,7 @@ async function showNowPlaying() {
 
 }
 
-async function getYoutubeVideos(movie){
+async function getYoutubeVideos(movie) {
 
     let apiUrl = `https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=457975d68f1ffc79f2d2fc03153e3600&language=en-US`;
     let response = await fetch(apiUrl);
@@ -185,9 +185,9 @@ function toggleModal(element) {
 
     movieInformationElement.innerHTML = "";
     console.log("entered toggle")
-    
+
     modal.classList.toggle("show-modal");
-    if(movieKey){
+    if (movieKey) {
         movieInformationElement.innerHTML += `
         <iframe width="480" height="270" src="https://www.youtube.com/embed/${movieKey}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1>${element.original_title}</h1>
@@ -196,7 +196,7 @@ function toggleModal(element) {
         
         `
     }
-    else{
+    else {
         movieInformationElement.innerHTML += `
         <h1>${element.original_title}</h1>
         <h2>Movie release date: ${element.release_date}</h2>
@@ -204,7 +204,7 @@ function toggleModal(element) {
         
         `
     }
-   
+
 
 }
 
@@ -216,6 +216,7 @@ function windowOnClick(event) {
 
 function backButton() {
     moviesContainerElement.innerHTML = "";
+    pageNumber = 1;
     showNowPlaying();
 }
 

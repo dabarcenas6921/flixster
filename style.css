@@ -9,11 +9,6 @@ html, body {
     padding: 0;
 }
 
-
-#load-more-movies-btn{
-    display: block;
-}
-
 /* Header CSS */
 
 .nav-bar{
@@ -190,4 +185,13 @@ button:active {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* Load more movies button */
+
+#load-more-movies-btn{
+    margin-left: auto;
+    margin-right: auto;
+    top: -20px;
+    display: block;
 }
