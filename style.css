@@ -7,6 +7,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    transition: background-color 0.2s linear;
 }
 
 /* Header CSS */
@@ -35,6 +36,19 @@ html, body {
 float: right;
 margin-top: 12px;
 margin-right: 25px;
+}
+
+#dark-mode-btn{
+  margin-top: 14px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Smaller nav-bar */
@@ -196,4 +210,11 @@ button:active {
     margin-right: auto;
     top: -20px;
     display: block;
+}
+
+/* Dark mode button */
+
+body.dark-mode{
+    background-color: #1c1e25;
+    color: white;
 }

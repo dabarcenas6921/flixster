@@ -5,6 +5,7 @@ const showMoreElement = document.querySelector("#load-more-movies-btn");
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-button");
 const movieInformationElement = document.querySelector(".movie-information");
+const darkModeButtonElement = document.querySelector("#dark-mode-btn");
 const KEY = "457975d68f1ffc79f2d2fc03153e3600";
 var tempSearched;
 var searchedTerm;
@@ -220,10 +221,22 @@ function backButton() {
     showNowPlaying();
 }
 
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    if(darkModeButtonElement.innerHTML == "🌙"){
+        darkModeButtonElement.innerHTML = "☀️";
+    } else{
+        darkModeButtonElement.innerHTML = "🌙";
+    }
+  }
+
 window.onload = (event) => {
     showNowPlaying();
     handleFormSubmit();
     showMore();
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+    darkModeButtonElement.addEventListener("click", darkMode);
+
 }
