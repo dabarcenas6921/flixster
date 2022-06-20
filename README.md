@@ -6,7 +6,7 @@ Submitted by: David Barcenas
 
 Estimated time spent: 6 hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](https://dabarcenas6921.github.io/flixster/)
+Deployed Application:[Flixster Deployed Site](https://dabarcenas6921.github.io/flixster/)
 
 ### Application Features
 
@@ -45,8 +45,6 @@ Deployed Application (optional): [Flixster Deployed Site](https://dabarcenas6921
 GIF LINK: https://imgur.com/a/7k3bz08
 
 ![](https://imgur.com/a/7k3bz08)
-
-`ADD_EMBEDDED_CODE_HERE`
 
 ### Reflection
 
